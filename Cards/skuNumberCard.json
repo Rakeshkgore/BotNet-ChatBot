@@ -1,0 +1,33 @@
+﻿{
+  "type": "AdaptiveCard",
+  "selectAction": {
+    "type": "Action.Submit"
+  },
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Enter Sku Number"
+        },
+        {
+          "type": "Input.Number",
+          "id": "skuNumber",
+          "placeholder": "Sku Number"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "skuSubmit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

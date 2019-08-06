@@ -1,0 +1,50 @@
+{
+  "type": "AdaptiveCard",
+  "selectAction": {
+    "type": "Action.Submit"
+  },
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Please select one of the following"
+        }
+      ]
+    },
+    {
+      "type": "Container"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "OrdernumberButton",
+      "title": "Order#",
+      "data": {
+        "action": "orderNumber"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "id": "upsordernumberButton",
+      "title": "UPS Order #",
+      "data": {
+        "action": "upsOrderNumber"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "id": "trackingnumberButton",
+      "title": "Tracking #",
+      "data": {
+        "action": "trackingNumber"
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

@@ -1,0 +1,33 @@
+﻿{
+  "type": "AdaptiveCard",
+  "selectAction": {
+    "type": "Action.Submit"
+  },
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Enter Ups Order Number"
+        },
+        {
+          "type": "Input.Number",
+          "id": "upsOrderNumber",
+          "placeholder": "Ups Order Number"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "upsOrderNumberSubmit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

@@ -1,0 +1,49 @@
+﻿{
+  "type": "AdaptiveCard",
+  "selectAction": {
+    "type": "Action.Submit"
+  },
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Inventory"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Please select one of the following options, or type what you need help with below.",
+          "wrap": true
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "skunumberButon",
+      "title": "SKU #",
+      "data": {
+        "action": "skuNumber"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "id": "ponumberButton",
+      "title": "PO #",
+      "data": {
+        "action": "poNumber"
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

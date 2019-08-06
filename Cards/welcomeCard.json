@@ -1,0 +1,57 @@
+{
+  "type": "AdaptiveCard",
+  "selectAction": {
+    "type": "Action.Submit"
+  },
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Hi How can I help you today?"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Please select one of the following options to get started",
+          "wrap": true
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "orderButton",
+      "title": "Order",
+      "data": {
+        "action": "order"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "id": "inventoryButton",
+      "title": "Inventory",
+      "data": {
+        "action": "inventory"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "id": "somethingelseButton",
+      "title": "Something Else",
+      "data": {
+        "action": "somethingElse"
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
