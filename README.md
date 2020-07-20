@@ -1,1 +1,3 @@
-Summer 2019 UPS-IT Intern Project
+UPS Intern Project
+ChatBot
+.Net/BotFramework
